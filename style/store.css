@@ -1,0 +1,103 @@
+.grid {
+  position: relative;
+}
+
+.grid .bg-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), color-stop(50%, transparent));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 50%);
+  left: 0;
+  bottom: 0;
+}
+
+.grid .preloader {
+  position: absolute;
+  background-color: #52b4db;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.grid .one .up, .grid .one .down {
+  overflow: hidden;
+}
+
+.grid .two {
+  position: relative;
+}
+
+.grid .two .up, .grid .two .middle, .grid .two .down {
+  position: relative;
+  background-color: lightskyblue;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+.grid .two .up video, .grid .two .up img, .grid .two .middle video, .grid .two .middle img, .grid .two .down video, .grid .two .down img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid .two .up a, .grid .two .middle a, .grid .two .down a {
+  position: absolute;
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 3rem;
+  bottom: 10%;
+}
+
+.grid .two .up a::after, .grid .two .middle a::after, .grid .two .down a::after {
+  content: '\203A';
+  width: 3rem;
+  height: 3rem;
+  line-height: 0;
+  font-size: 3rem;
+  margin-left: 5px;
+  opacity: .7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.grid .two .up a:hover::after, .grid .two .middle a:hover::after, .grid .two .down a:hover::after {
+  padding-left: 5px;
+  opacity: 1;
+}
+
+.grid .two .middle {
+  height: 40%;
+}
+
+.grid .two .up {
+  height: 60%;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.grid .two .down {
+  height: 30%;
+}
+
+@media (max-width: 965px) {
+  .grid .two .up a, .grid .two .middle a, .grid .two .down a {
+    font-size: 1.5rem;
+  }
+  .grid .one .up, .grid .one .middle, .grid .one .down, .grid .two .up, .grid .two .middle, .grid .two .down {
+    min-height: 250px;
+  }
+}
+/*# sourceMappingURL=store.css.map */

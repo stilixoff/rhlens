@@ -1,0 +1,423 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+}
+
+.bg-body {
+  position: absolute;
+  background-color: #002757;
+  width: 100%;
+  height: -webkit-fill-available;
+  min-height: 100%;
+  z-index: -100;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% - 100px);
+  min-width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  height: 50px;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 100%;
+  text-align: left;
+}
+
+header .logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .back {
+  font-size: 1.5rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header .white a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+header .black a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 2rem;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  -webkit-box-shadow: 13px 21px 46px -7px #000000;
+          box-shadow: 13px 21px 46px -7px #000000;
+}
+
+.grid .one {
+  width: 60%;
+  background-color: greenyellow;
+}
+
+.grid .one .up {
+  position: relative;
+  height: 50%;
+  background-color: lightskyblue;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid .one .up video,
+.grid .one .up img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid .one .up a {
+  position: absolute;
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 3rem;
+  bottom: 10%;
+}
+
+.grid .one .up a::after {
+  content: '\203A';
+  width: 3rem;
+  height: 3rem;
+  line-height: 0;
+  font-size: 3rem;
+  margin-left: 5px;
+  opacity: .7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.grid .one .up a:hover::after {
+  padding-left: 5px;
+  opacity: 1;
+}
+
+.grid .one .down {
+  position: relative;
+  height: 50%;
+  background-color: lightskyblue;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid .one .down video,
+.grid .one .down img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid .one .down a {
+  position: absolute;
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 3rem;
+  bottom: 10%;
+}
+
+.grid .one .down a::after {
+  content: '\203A';
+  width: 3rem;
+  height: 3rem;
+  line-height: 0;
+  font-size: 3rem;
+  margin-left: 5px;
+  opacity: .7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.grid .one .down a:hover::after {
+  padding-left: 5px;
+  opacity: 1;
+}
+
+.grid .two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+.grid .two .up {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent)), url("../img/optikerbesuch.jpg");
+  background: linear-gradient(to top, black 0%, transparent 100%), url("../img/optikerbesuch.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 35%;
+}
+
+.grid .two .up h3 {
+  color: white;
+  font-family: inherit;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.grid .two .up .select select {
+  color: white;
+  background: unset;
+  font-weight: 300;
+  border: unset;
+  border-bottom: 2px solid white;
+}
+
+.grid .two .up .select select option {
+  background: #3D46CE;
+  border: unset;
+  font-size: 1.5rem;
+}
+
+.grid .two .up .select button {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.grid .two .up .select button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background: url("../img/search.png") center no-repeat;
+  background-size: cover;
+}
+
+.grid .two .middle {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(80%, transparent)), url("../img/angenehmer-sehen.jpg") center no-repeat;
+  background: linear-gradient(to top, black 0%, transparent 80%), url("../img/angenehmer-sehen.jpg") center no-repeat;
+  background-size: cover;
+  height: 35%;
+}
+
+.grid .two .middle a {
+  position: absolute;
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 2.5rem;
+  bottom: 20%;
+  left: 5%;
+  max-width: 600px;
+}
+
+.grid .two .middle a::after {
+  content: '\203A';
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 0;
+  font-size: 3rem;
+  margin-left: 5px;
+  opacity: .7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.grid .two .middle a:hover::after {
+  padding-left: 5px;
+  opacity: 1;
+}
+
+.grid .two .down {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent)), url("../img/cat.jpg") center no-repeat;
+  background: linear-gradient(to top, black 0%, transparent 100%), url("../img/cat.jpg") center no-repeat;
+  background-size: cover;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid .two .down .contacts {
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 2.5rem;
+  bottom: 60%;
+  left: 5%;
+  max-width: 600px;
+}
+
+.grid .two .down .contacts::after {
+  content: '\203A';
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 0;
+  font-size: 3rem;
+  margin-left: 5px;
+  opacity: .7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.grid .two .down .contacts:hover::after {
+  padding-left: 5px;
+  opacity: 1;
+}
+
+.grid .two .down .phone {
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 1, 5rem;
+  bottom: 20%;
+  left: 5%;
+  max-width: 600px;
+}
+
+footer {
+  background: transparent;
+  height: 50px;
+}
+
+@media (max-width: 1161px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 965px) {
+  header .logo {
+    width: 70%;
+  }
+  .grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .grid .one {
+    width: 100%;
+  }
+  .grid .one .up {
+    min-height: 300px;
+  }
+  .grid .one .up a {
+    font-size: 1.5rem;
+  }
+  .grid .one .up a::after {
+    font-size: 2rem;
+  }
+  .grid .one .down {
+    min-height: 300px;
+  }
+  .grid .one .down a {
+    font-size: 1.5rem;
+  }
+  .grid .one .down a::after {
+    font-size: 1.5rem;
+  }
+  .grid .two {
+    width: 100%;
+  }
+  .grid .two .up {
+    min-height: 200px;
+  }
+  .grid .two .middle {
+    min-height: 300px;
+  }
+  .grid .two .middle a {
+    font-size: 1.5rem;
+  }
+  .grid .two .middle a::after {
+    font-size: 1.5rem;
+  }
+  .grid .two .down {
+    min-height: 300px;
+  }
+  .grid .two .down .contacts {
+    font-size: 1.5rem;
+  }
+  .grid .two .down .contacts::after {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=grid.css.map */

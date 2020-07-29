@@ -1,0 +1,23 @@
+footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Source Sans Pro', sans-serif;
+    .color-white{
+        color: white;
+    }
+    .color-black{
+        color: black;
+    }
+    a{
+        margin-left: 10px;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
