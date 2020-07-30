@@ -401,6 +401,18 @@ footer {
   .grid .two .up {
     min-height: 200px;
   }
+  .grid .two .up h3 {
+    font-size: 1.5rem;
+  }
+  .grid .two .up h3::after {
+    font-size: 1.5rem;
+  }
+  .grid .two .up select, .grid .two .up option {
+    font-size: 1.5rem;
+  }
+  .grid .two .up option {
+    max-height: 30vh;
+  }
   .grid .two .middle {
     min-height: 300px;
   }

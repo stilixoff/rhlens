@@ -384,6 +384,20 @@ footer {
 
             .up {
                 min-height: 200px;
+                h3 {
+                    font-size: 1.5rem;
+
+                    &::after {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                select, option{
+                    font-size: 1.5rem;
+                }
+                option{
+                    max-height: 30vh;
+                }
             }
 
             .middle {

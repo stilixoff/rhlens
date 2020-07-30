@@ -265,6 +265,11 @@
           box-sizing: border-box;
 }
 
+.main .inner .b-carousel__item .sun-lenses .lenses-title {
+  position: absolute;
+  top: 5%;
+}
+
 .main .inner .b-carousel__item .sun-lenses h3 {
   font-size: 6vmin;
 }
@@ -296,15 +301,24 @@
   height: auto;
 }
 
-.main .inner .b-carousel__item .sun-lenses .lenses img {
-  width: 7%;
-  height: auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.main .inner .b-carousel__item .sun-lenses .lenses .l-inner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
 }
 
-.main .inner .b-carousel__item .sun-lenses .lenses img:hover {
-  width: 10%;
+.main .inner .b-carousel__item .sun-lenses .lenses .l-inner img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .inner .b-carousel__item .sun-lenses .lenses .l-inner:hover {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+  width: 40%;
 }
 
 .main .inner .b-carousel__item .sun-lenses .bigger-lens img {
@@ -354,6 +368,16 @@
           box-sizing: border-box;
 }
 
+.main .inner .b-carousel__item .sun-lenses .lenses-color .left-color .color-img {
+  max-width: 80%;
+}
+
+.main .inner .b-carousel__item .sun-lenses .lenses-color .left-color .color-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .main .inner .b-carousel__item .sun-lenses .lenses-color .right-color {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,6 +395,16 @@
   padding: 20px 0 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.main .inner .b-carousel__item .sun-lenses .lenses-color .right-color .color-img {
+  max-width: 80%;
+}
+
+.main .inner .b-carousel__item .sun-lenses .lenses-color .right-color .color-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main .inner .b-carousel__item .sun-lenses .lenses-color .color-title {
@@ -1724,6 +1758,11 @@
   .main .inner .video__item .video-slide p {
     margin: 100px 0 10px 0;
   }
+  .main .inner .b-carousel__wrap .bg-body-white {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    overflow-y: unset;
+  }
   .main .inner .b-carousel__prev {
     left: 0;
     bottom: 50%;
@@ -2000,6 +2039,60 @@
     background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/cat3.jpg") right no-repeat;
     background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/cat3.jpg") right no-repeat;
     background-size: cover;
+  }
+  .main .inner .double .personal-bg-15 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/2017-2.jpeg.pagespeed.ce.r4xxQLo4mC.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/2017-2.jpeg.pagespeed.ce.r4xxQLo4mC.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .inner .double .personal-bg-16 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/2016.jpeg.pagespeed.ce.ejl3nP3T8B.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/2016.jpeg.pagespeed.ce.ejl3nP3T8B.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .inner .double .personal-bg-17 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/2007.jpeg.pagespeed.ce.VxU3BowyR3.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/2007.jpeg.pagespeed.ce.VxU3BowyR3.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .inner .double .personal-bg-18 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/2006.jpeg.pagespeed.ce.hDUmD0-W-X.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/2006.jpeg.pagespeed.ce.hDUmD0-W-X.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .inner .double .personal-bg-19 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/2005.jpeg.pagespeed.ce.Is_jqJgyBx.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/2005.jpeg.pagespeed.ce.Is_jqJgyBx.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .inner .double .personal-bg-20 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/2003.jpeg.pagespeed.ce.EptjBWSEJe.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/2003.jpeg.pagespeed.ce.EptjBWSEJe.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .inner .double .personal-bg-21 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/1997.jpeg.pagespeed.ce.zskgtM58c8.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/1997.jpeg.pagespeed.ce.zskgtM58c8.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .inner .double .personal-bg-22 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/1988.jpeg.pagespeed.ce.2v73exPaFt.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/1988.jpeg.pagespeed.ce.2v73exPaFt.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main .inner .double .personal-bg-23 {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.2))), url("../img/1987.jpeg.pagespeed.ce.FM0LPg6RsW.jpg") right no-repeat;
+    background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.2) 100%), url("../img/1987.jpeg.pagespeed.ce.FM0LPg6RsW.jpg") right no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .main .inner .double .img__double {
     display: none;
